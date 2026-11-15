@@ -1,0 +1,48 @@
+
+# ============================================================
+# TBGK - Thermal BGK Lattice Boltzmann
+# ============================================================
+
+# Simulation results
+results/
+*.vti
+*.vtk
+*.vtu
+*.png
+
+# Compiled executables
+/tbgk
+*.exe
+*.out
+
+# CUDA and C++ build files
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.obj
+*.a
+*.so
+*.ptx
+*.cubin
+*.fatbin
+
+# Python cache and environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Profiling and temporary files
+*.log
+*.tmp
+*.nsys-rep
+*.ncu-rep
+*.sqlite
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
