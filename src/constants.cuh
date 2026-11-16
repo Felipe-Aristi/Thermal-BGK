@@ -115,7 +115,7 @@ inline constexpr real_t upperWallTemperature = referenceTemperature - 0.5 * temp
 // epsilon is dimensionless.
 // ============================================================
 
-inline constexpr real_t perturbationAmplitude = 1.0e-4;
+inline constexpr real_t perturbationAmplitude = 1.0e-4; //1.0e-4
 
 // ============================================================
 // Hydrostatic polytropic equilibrium
@@ -127,7 +127,7 @@ inline constexpr real_t perturbationAmplitude = 1.0e-4;
 // g = (m + 1) * DeltaT / H
 // ============================================================
 
-inline constexpr real_t polytropicIndex = 0.98;
+inline constexpr real_t polytropicIndex = -0.9806;
 
 inline constexpr real_t gravity = (polytropicIndex + 1.0) * temperatureDifference / Domain::height;
 
@@ -183,7 +183,7 @@ inline constexpr real_t superadiabaticFraction = 1.0 - (polytropicIndex + 1.0) /
 // nu = sqrt(Pr * g * beta * DeltaT_SA * H^3 / Ra)
 // ============================================================
 
-inline constexpr real_t rayleigh = 5000.0;
+inline constexpr real_t rayleigh = 1590.0;
 
 // ============================================================
 // Compile-time square root
